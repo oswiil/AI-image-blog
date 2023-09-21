@@ -1,0 +1,69 @@
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 250px;
+}
+
+.inputField {
+  border-radius: 5px;
+  padding: 10px;
+  width: 150%;
+  height: 150%;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.submitButton {
+  /* border-radius: 5px;
+  padding: 10px 20px;
+  background-color: #007bff; */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background-color: #0056b3;
+}
+
+  .mymasonrygrid {
+    display: -webkit-box; /* Not needed if autoprefixing */
+    display: -ms-flexbox; /* Not needed if autoprefixing */
+    display: flex;
+    margin-left: -30px; /* gutter size offset */
+    width: auto;
+  }
+  .mymasonrygridcolumn{
+    padding-left: 30px; /* gutter size */
+    background-clip: padding-box;
+  }
+  
+  /* Style your items */
+  .mymasonrygridcolumn > div { /* change div to reference your elements you put in <Masonry> */
+    background: grey;
+    margin-bottom: 30px;
+  }
+
+  /* Optional, different gutter size on mobile */
+@media (max-width: 800px) {
+  .mymasonrygrid {
+    margin-left: -15px; /* gutter size offset */
+  }
+  .mymasonrygridcolumn {
+    padding-left: 15px; /* gutter size offset */
+  }
+  .mymasonrygridcolumn > div {
+    margin-bottom: 15px; /* space between items */
+    
+  
+  }
+  .mymasonrygridcolumn > div > img {
+    width: 100%;
+    height: auto;
+  }
+  
+
+}
